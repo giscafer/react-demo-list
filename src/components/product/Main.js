@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+
 import FilterableProductTable from './FilterableProductTableComponent';
 
 var PRODUCTS = [

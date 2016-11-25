@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import PureRenderMixin  from 'react-addons-pure-render-mixin';
 
 import ProductTable from './ProductTableComponent';
 import SearchBar from './SearchBarComponent';
@@ -16,6 +17,7 @@ class FilterableProductTableComponent extends React.Component {
     }
     //绑定上下问
     this.handleUserInput = this.handleUserInput.bind(this);
+    this.shouldComponentUpdate=PureRenderMixin.shouldComponentUpdate.bind(this);
   }
   /*static defaultProps = {
       filterText: '',

@@ -5,7 +5,11 @@ import ProductCategoryRow from './ProductCategoryRowComponent';
 import ProductRow from './ProductRowComponent';
 
 class ProductTableComponent extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render() {
+    console.log(Array.isArray(this.props.children)); // => true
     var rows = [];
     var lastCategory = null;
     this.props.products.forEach(function(product) {

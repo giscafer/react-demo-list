@@ -8,6 +8,7 @@ class SearchBarComponent extends React.Component {
     this.handleChange=this.handleChange.bind(this);
   }
   handleChange(){
+    //  this.refs.filterTextInput.focus()
     this.props.onUserInput(
       this.refs.filterTextInput.value,
       this.refs.inStockOnlyInput.checked
