@@ -1,13 +1,17 @@
 'use strict';
 
 import React from 'react';
-import Resize from './ResizeComponent'
+import Resize from './ResizeComponent';
+import GithubUser from './GithubUserComponent';
 require('styles/test/Main.css');
 
 class MainComponent extends React.Component {
   render() {
     return (
-      <Resize/>
+      <div>
+        <Resize/>
+       <GithubUser/>
+      </div>
     );
   }
 }

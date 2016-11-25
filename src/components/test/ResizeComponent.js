@@ -13,7 +13,7 @@ class ResizeComponent extends React.Component {
     }
     this.handleResize=this.handleResize.bind(this);
   }
-  handleResize(e){
+  handleResize(){
     this.setState({windowWidth:window.innerWidth})
   }
   componentDidMount(){
