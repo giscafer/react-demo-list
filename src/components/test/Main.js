@@ -10,7 +10,7 @@ class MainComponent extends React.Component {
     return (
       <div>
         <Resize/>
-       <GithubUser/>
+       <GithubUser source="https://api.github.com/users/giscafer"/>
       </div>
     );
   }
