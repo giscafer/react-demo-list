@@ -6,6 +6,8 @@ import PureRenderMixin  from 'react-addons-pure-render-mixin';
 import ProductTable from './ProductTableComponent';
 import SearchBar from './SearchBarComponent';
 
+require('styles/product/product.less');
+
 class FilterableProductTableComponent extends React.Component {
   constructor(props){
     super(props);
@@ -32,7 +34,7 @@ class FilterableProductTableComponent extends React.Component {
   }
   render() {
      return (
-      <div>
+      <div className="product-list">
         <SearchBar
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}

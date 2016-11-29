@@ -3,9 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Perf  from 'react-addons-perf';
 
-// import App from './components/Main';
-// import App from './components/product/Main';
-import App from './components/test/Main';
+import App from './components/Main';
 
 // Render the main component into the dom
 Perf.start();

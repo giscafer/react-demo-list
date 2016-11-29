@@ -9,7 +9,6 @@ class ProductTableComponent extends React.Component {
     super(props);
   }
   render() {
-    console.log(Array.isArray(this.props.children)); // => true
     var rows = [];
     var lastCategory = null;
     this.props.products.forEach(function(product) {
