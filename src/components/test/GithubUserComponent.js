@@ -28,7 +28,7 @@ class GithubUserComponent extends React.Component {
   render() {
     return (
       <div className="githubuser-component">
-          <h3>githubuser-componen</h3>
+          <h3>githubuser-component</h3>
           <p>name:{this.state.name}</p>
           <p>company:{this.state.company}</p>
           <p>blog:{this.state.blog}</p>

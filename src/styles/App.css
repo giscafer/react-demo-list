@@ -29,3 +29,11 @@ ul li{
 ul li a{
    color:#fff;
 }
+
+.nav{
+  margin: 10px 0 10px 10px;
+}
+.nav a{
+  color: #fff;
+  font-weight: bold;
+}
