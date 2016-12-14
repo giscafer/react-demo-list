@@ -12,13 +12,7 @@ class LifeCycleMainComponent extends React.Component {
     }
     render() {
         return (
-            <div>
-                <LifeCycleApp text={this.state.info} />
-                <div id="console">
-                    <h2>Console</h2>
-                    <ul></ul>
-                </div>
-            </div>
+            <LifeCycleApp text={this.state.info} />
         );
     }
     componentDidMount() {
