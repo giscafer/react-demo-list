@@ -7,11 +7,19 @@ function fpLog(sMessage) {
 }
 function fpLog2(sMessage) {
   var oElement = document.createElement('li');
-  oElement.innerHTML=sMessage;
+  oElement.innerHTML = sMessage;
   oList.appendChild(oElement);
 }
-window.fpLog=fpLog;
-window.fpLog2 =fpLog2 ;
+function clearConsole() {
+    while(oList.hasChildNodes()) //当div下还存在最后的子节点时 循环继续
+    {  
+        oList.removeChild(oList.lastChild);  
+    }  
+}
+window.oConsole = oConsole;
+window.clearConsole = clearConsole;
+window.fpLog = fpLog;
+window.fpLog2 = fpLog2;
 
 /*if (!window.console) {
   window.console = {};

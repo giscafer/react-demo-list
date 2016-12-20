@@ -1,4 +1,4 @@
-
+import '../../styles/lifecycle/index.css'
 import LifeCycleApp from './LifeCycle';
 import React from 'react';
 

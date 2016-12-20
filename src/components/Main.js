@@ -4,20 +4,33 @@ require('../common/utils.js')
 import React from 'react';
 import { Router, Route, hashHistory } from 'react-router';
 
+import RouteApp from '../route/index.js';
 import GithubUserApp from './test/Main.js';
 import ProductApp from './product/Main.js';
 import LifeCycleApp from './lifecycle/Main.js';
-import RouteApp from '../route/index.js';
+import TodoApp from './todo/App.js';
 
 class AppComponent extends React.Component {
+  enterHandle(nextState) {
+    if (oConsole) {
+      if (nextState.location.pathname.includes('lifecycle')) {
+        clearConsole()
+        oConsole.style.display = 'block';
+      } else {
+        oConsole.style.display = 'none';
+      }
+    }
+  }
   render() {
+
     return (
-     <Router history={hashHistory}>
-        <Route path="/" component={RouteApp}/>
-        <Route path="/github-user" component={GithubUserApp}/>
-        <Route path="/product" component={ProductApp}/>
-        <Route path="/lifecycle" component={LifeCycleApp}/>
-     </Router>
+      <Router history={hashHistory}>
+        <Route path="/" component={RouteApp} onEnter={(nextState) => this.enterHandle(nextState)} />
+        <Route path="/github-user" component={GithubUserApp} onEnter={(nextState) => this.enterHandle(nextState)} />
+        <Route path="/product" component={ProductApp} onEnter={(nextState) => this.enterHandle(nextState)} />
+        <Route path="/lifecycle" component={LifeCycleApp} onEnter={(nextState) => this.enterHandle(nextState)} />
+        <Route path="/todo" component={TodoApp} onEnter={(nextState) => this.enterHandle(nextState)} />
+      </Router>
     );
   }
 }
