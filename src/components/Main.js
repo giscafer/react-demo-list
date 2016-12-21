@@ -8,7 +8,7 @@ import RouteApp from '../route/index.js';
 import GithubUserApp from './test/Main.js';
 import ProductApp from './product/Main.js';
 import LifeCycleApp from './lifecycle/Main.js';
-import TodoApp from './todo/App.js';
+import TodoApp from './todo/index.js';
 
 class AppComponent extends React.Component {
   enterHandle(nextState) {
