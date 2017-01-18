@@ -6,7 +6,7 @@ export default ({onFilterChange}) => {
     //     letterArr[i]=String.fromCharCode((65 + i));
     // }
     // console.log(letterArr)
-    let letterArr=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    let letterArr=['特大','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     return (
         <ul className='city-index'>
             {

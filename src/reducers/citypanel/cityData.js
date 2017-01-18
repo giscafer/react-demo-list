@@ -1,30 +1,37 @@
-export const cityData=[
+export const cityData = [
     {
         'pinyin': 'beijing',
+        'citynum': '1',
         'name': '北京'
     },
     {
         'pinyin': 'shanghai',
+        'citynum': '1',
         'name': '上海'
     },
     {
         'pinyin': 'tianjin',
+        'citynum': '1',
         'name': '天津'
     },
     {
         'pinyin': 'chongqing',
+        'citynum': '1',
         'name': '重庆'
     },
     {
         'pinyin': 'guangzhou',
+        'citynum': '1',
         'name': '广州'
     },
     {
         'pinyin': 'nanjing',
+        'citynum': '1',
         'name': '南京'
     },
     {
         'pinyin': 'hangzhou',
+        'citynum': '1',
         'name': '杭州'
     },
     {

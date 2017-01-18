@@ -22,6 +22,9 @@ class AppComponent extends React.Component {
       }
     }
   }
+  enterHandle2(nextState) {
+    console.log()
+  }
   render() {
 
     return (
