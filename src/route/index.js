@@ -14,7 +14,7 @@ export default class RouteApp extends React.Component {
                     <li><NavLink to="/product">Product</NavLink></li>
                     <li><NavLink to="/lifecycle">LifeCycle</NavLink></li>
                     <li><NavLink to="/todo">TODO</NavLink></li>
-                    <li><NavLink to="/citypanel">citypanel</NavLink></li>
+                    <li><NavLink to="/citypanel">CityPanel</NavLink></li>
                 </ul>
             </div>
         );

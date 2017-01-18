@@ -19,7 +19,7 @@ function cityFilter(filter) {
             if (item['citynum']) {
                 return item;
             }
-        } else if (item['pinyin'][0].toLocaleUpperCase() === filter) {
+        } else if (item['pinyin'][0].toLocaleUpperCase() === filter && !item['citynum']) {
             return item;
         } else {
             console.log(filter)
