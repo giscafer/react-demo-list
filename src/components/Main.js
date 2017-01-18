@@ -9,6 +9,7 @@ import GithubUserApp from './test/Main.js';
 import ProductApp from './product/Main.js';
 import LifeCycleApp from './lifecycle/Main.js';
 import TodoApp from './todo/index.js';
+import CityPanelApp from './citypanel/Main';
 
 class AppComponent extends React.Component {
   enterHandle(nextState) {
@@ -30,6 +31,7 @@ class AppComponent extends React.Component {
         <Route path="/product" component={ProductApp} onEnter={(nextState) => this.enterHandle(nextState)} />
         <Route path="/lifecycle" component={LifeCycleApp} onEnter={(nextState) => this.enterHandle(nextState)} />
         <Route path="/todo" component={TodoApp} onEnter={(nextState) => this.enterHandle(nextState)} />
+        <Route path="/citypanel" component={CityPanelApp} onEnter={(nextState) => this.enterHandle(nextState)} />
       </Router>
     );
   }
